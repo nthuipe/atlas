@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Atlas</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/421f973b98.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand">IPE Forum</a>
+          <button type="button" id="mode-d" class="btn btn-dark">Dark Mode</button>
+          <button style="display:none" type="button" id="mode-l" class="btn btn-light">Light Mode</button>
+      </nav> -->
+      <div id="wrapper" class="container-fluid">
+          <div id="main-row" class="row">
+              <div id="dashboard" class="col-sm-3">
+                  <div id="logo-container" class="row">
+                      <img id="logo" src="resources/logo.png" alt="logo"><br>
+                  </div>
+                  <!-- <div id="name-container" class="row">
+                      <div id="name">彭靖</div>
+                  </div>
+                  <div id="grade-container" class="row">
+                      <div id="grade">2016</div>
+                  </div>
+                  <div id="department-container" class="row">
+                      <div id="department"><span id="department-main" class="badge badge-success">化工<br>CHE</span><span id="department-sub" class="badge badge-secondary">資工<br>CS</span></div>
+                  </div> -->
+                  <div id="exam-container" class="row">
+                      <button type="button" id="exam" class="btn btn-secondary-dark btn-block">考古題<br>Past Exams</button>
+                  </div>
+                  <div id="exp-container" class="row">
+                      <button type="button" id="exp" class="btn btn-secondary-dark btn-block">課程心得<br>Course Info</button>
+                  </div>
+                  <div id="exc-container" class="row">
+                      <button type="button" id="exc" class="btn btn-secondary-dark btn-block">交換心得<br>Exchange</button>
+                  </div>
+                  <div id="map-container" class="row">
+                      <button type="button" id="map" class="btn btn-secondary-dark btn-block">課程地圖<br>Map</button>
+                  </div>
+                  <!-- <div id="mode-container" class="row">
+                      <button type="button" id="mode-d" class="btn btn-dark">Dark Mode</button>
+                      <button style="display:none" type="button" id="mode-l" class="btn btn-light">Light Mode</button>
+                  </div> -->
+                  <div id="logout-container" class="row">
+                      <button type="button" id="logout" class="btn btn-outline-secondary">Logout</button>
+                  </div>
+              </div>
+              <div id="main" class="col-9">
+                  <div id="home-page" class="container" style="display:initial">
+                      <div id="title-home" class="container">
+                          <h1><b>個人資料 / Homepage</b></h1>
+                      </div>
+                      <div class="container card-container">
+                          <div class="card border-secondary card-limit">
+                              <div class="card-header">
+                                個人資料
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">彭靖</h5>
+                                <p class="card-text">工學院學士班四年級</p>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><b>第一專長 /</b> <span class="badge badge-success span-expand">化學工程 CHE</span></li>
+                                  <li class="list-group-item"><b>第二專長 /</b> <span class="badge badge-secondary span-expand">資訊工程 CS</span></li>
+                                  <li class="list-group-item"><b>學號 /</b> 105030010</li>
+                                  <li class="list-group-item"><b>生日 /</b> 1998-02-29</li>
+                                  <li class="list-group-item"><b>信箱 /</b> clhsstarposterg@gmail.com</li>
+                                  <li class="list-group-item"><b>電話 /</b> 0912345678</li>
+                                  <li class="list-group-item"><b>郵遞區號 /</b> 300</li>
+                                  <li class="list-group-item"><b>地址 /</b> 新竹市東區光復路二段101號</li>
+                                  <li class="list-group-item"><b>入學管道 /</b> 申請</li>
+                                  <li class="list-group-item"><b>前學歷 /</b> 國立中央大學附屬中壢高級中學</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="exam-page" class="container" style="display:none">
+                      <div id="title-exam" class="container">
+                          <h1><b>考古題 / Past Exams</b></h1>
+                      </div>
+                      <div class="container card-container">
+                          <h3><span class="badge badge-dark">第一專長</span></h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="card border-danger">
+                                      <div class="card-header bg-danger text-white">
+                                        動機 PME
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">材料力學</h5>
+                                        <p class="card-text">Prof.Chang, Spring, 2018. Midterm and Finals.</p>
+                                        <button type="button" class="btn btn-outline-danger"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                                  <div class="card border-primary">
+                                      <div class="card-header bg-primary text-white">
+                                        材料 MSE
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">材料熱力學</h5>
+                                        <p class="card-text">Prof.Wang, Fall, 2019. Without midterms.</p>
+                                        <button type="button" class="btn btn-outline-primary"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card border-success">
+                                      <div class="card-header bg-success text-white">
+                                        化工 CHE
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">化工熱力學</h5>
+                                        <p class="card-text">Prof.Chen, Spring, 2017. Homework included.</p>
+                                        <button type="button" class="btn btn-outline-success"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                                  <div class="card border-warning">
+                                      <div class="card-header bg-warning text-white">
+                                        工工 IEEM
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">品質管理</h5>
+                                        <p class="card-text">Prof.Chang, Fall, 2016.</p>
+                                        <button type="button" class="btn btn-outline-warning"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="container card-container">
+                          <h3><span class="badge badge-dark">第二專長</span></h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="card border-secondary">
+                                      <div class="card-header bg-secondary text-white">
+                                        資工 CS
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">資料結構</h5>
+                                        <p class="card-text">Prof.Tsai, Fall, 2019</p>
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                                  <div class="card border-info">
+                                      <div class="card-header bg-info text-white">
+                                        電機 EE
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">嵌入式系統</h5>
+                                        <p class="card-text">Prof.Liu, Spring, 2019. Homework included.</p>
+                                        <button type="button" class="btn btn-outline-info"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card border-info">
+                                      <div class="card-header bg-info text-white">
+                                        計財 QF
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">公司經濟</h5>
+                                        <p class="card-text">Prof.Lai, Corporate finance, Spring, 2019</p>
+                                        <button type="button" class="btn btn-outline-info"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                                  <div class="card border-secondary">
+                                      <div class="card-header bg-secondary text-white">
+                                        經濟 ECON
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">經濟學原理</h5>
+                                        <p class="card-text">Prof.Chu, Spring, 2018</p>
+                                        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-arrow-alt-circle-down"></i>  Download</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="exp-page" class="container" style="display:none">
+                      <div id="title-exp" class="container">
+                          <h1><b>課程心得 / Course Info</b></h1>
+                      </div>
+                      <div class="container card-container">
+                          <h3><span class="badge badge-dark">第一專長</span></h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="card border-danger">
+                                      <div class="card-header bg-danger text-white">
+                                        動機 PME
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">機械設計</h5>
+                                        <p class="card-text">我覺得這個老師教得很好，上課很認真，作業很有用。</p>
+                                      </div>
+                                  </div>
+                                  <div class="card border-primary">
+                                      <div class="card-header bg-primary text-white">
+                                        材料 MSE
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">晶體缺陷</h5>
+                                        <p class="card-text">這堂課是英文授課，考試有點難。</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card border-success">
+                                      <div class="card-header bg-success text-white">
+                                        化工 CHE
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">單元操作實驗</h5>
+                                        <p class="card-text">真的很推薦這個老師！上課很認真，考試也不會太難。助教也很棒。</p>
+                                      </div>
+                                  </div>
+                                  <div class="card border-warning">
+                                      <div class="card-header bg-warning text-white">
+                                        工工 IEEM
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">生產管理</h5>
+                                        <p class="card-text">這個老師上課節奏有點快，但是作業很簡單、考試也不會太難。</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="container card-container">
+                          <h3><span class="badge badge-dark">第二專長</span></h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="card border-secondary">
+                                      <div class="card-header bg-secondary text-white">
+                                        資工 CS
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">計算機程式設計</h5>
+                                        <p class="card-text">Final project有點難做，其餘還好。</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card border-info">
+                                      <div class="card-header bg-info text-white">
+                                        電機 EE
+                                      </div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">電磁學</h5>
+                                        <p class="card-text">每週都要小考跟點名！但是老師教得很好。</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="exc-page" class="container" style="display:none">
+                      <div id="title-exc" class="container">
+                          <h1><b>交換心得 / Exchange</b></h1>
+                      </div>
+                      <div class="container card-container">
+                          <h3><span class="badge badge-primary">亞洲 Asia</span></h3>
+                          <div class="row">
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/asia-1.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">University of Tokyo</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/asia-2.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">National University of Singapore</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/asia-3.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">University of Seoul</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <h3><span class="badge badge-danger">美洲 Americas</span></h3>
+                          <div class="row">
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/america-1.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">UC Irvine</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-danger">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/america-2.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">University of New York</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-danger">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <h3><span class="badge badge-success">歐洲 Europe</span></h3>
+                          <div class="row">
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/europe-1.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">University of Dresden</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-success">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/europe-2.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">Lund University</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-success">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <h3><span class="badge badge-warning">澳洲 Australia</span></h3>
+                          <div class="row">
+                              <div class='col' style="min-width: 21rem; max-width: 24rem;">
+                                  <div class="card" style="width: 21rem;">
+                                      <img src="resources/australia-1.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">University of Sydney</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-warning">Read more...</a>
+                                      </div>
+                                 </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="map-page" class="container" style="display:none">
+                      <div id="title-map" class="container">
+                          <h1><b>課程地圖 / Course Map+</b></h1>
+                      </div>
+                      <div id="help" class="container">
+                          <button class="btn btn-secondary disabled left"><b>Colorcode:</b></button>
+                          <button class="btn btn-secondary left">院定必修</button>
+                          <button class="btn btn-primary left">無擋修</button>
+                          <button class="btn btn-success left">擋修I</button>
+                          <button class="btn btn-warning left">擋修II</button>
+                          <button class="btn btn-danger left">擋修III</button>
+                          <button class="btn btn-info left">選修</button>
+                      </div>
+                      <div class="container card-container">
+                          <div class="card border-success card-limit">
+                              <div class="card-header bg-success text-white">
+                                第一專長
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title"><b>化學工程</b></h5>
+                                <p class="card-text">107年 / 共 33 學分</p>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>一上</b></button>
+                                      <button class="btn btn-secondary left btn-limit">普通化學一</button>
+                                      <button class="btn btn-secondary left btn-limit">普通化學實驗一</button>
+                                      <button class="btn btn-secondary left btn-limit">普通物理一</button>
+                                      <button class="btn btn-secondary left btn-limit">普通物理實驗一</button>
+                                      <button class="btn btn-secondary left btn-limit">微積分一</button>
+                                      <button class="btn btn-secondary left btn-limit">大一英文</button>
+                                      <button class="btn btn-secondary left btn-limit">工程導論</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>一下</b></button>
+                                      <button class="btn btn-secondary left btn-limit">普通化學二</button>
+                                      <button class="btn btn-secondary left btn-limit">普通化學實驗二</button>
+                                      <button class="btn btn-secondary left btn-limit">普通物理二</button>
+                                      <button class="btn btn-secondary left btn-limit">普通物理實驗二</button>
+                                      <button class="btn btn-secondary left btn-limit">微積分二</button>
+                                      <button class="btn btn-secondary left btn-limit">大一英文</button>
+                                      <button class="btn btn-secondary left btn-limit">大學中文</button>
+                                      <button class="btn btn-primary left btn-limit">質能均衡</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>二上</b></button>
+                                      <button class="btn btn-success left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/普通化學一、普通化學二">有機化學一</button>
+                                      <button class="btn btn-success left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/微積分一、微積分二">工程數學一</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>二下</b></button>
+                                      <button class="btn btn-warning left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/有機化學一">有機化學二</button>
+                                      <button class="btn btn-warning left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/工程數學一">工程數學二</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>三上</b></button>
+                                      <button class="btn btn-primary left btn-limit">化工熱力學</button>
+                                      <button class="btn btn-danger left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/工程數學二">輸送現象與單元操作一</button>
+                                      <button class="btn btn-primary left btn-limit">化學工程反應</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>三下</b></button>
+                                      <button class="btn btn-primary left btn-limit">程序控制</button>
+                                      <button class="btn btn-danger left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/輸送現象與單元操作一">輸送現象與單元操作二</button>
+                                      <button class="btn btn-success left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/質能均衡">化工單操</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>四上</b></button>
+                                      <button class="btn btn-primary left btn-limit">單元操作實驗</button>
+                                      <button class="btn btn-warning left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/化工單操">程序控制</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-success left btn-limit"><b>四下</b></button>
+
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="container card-container">
+                          <div class="card border-secondary card-limit">
+                              <div class="card-header bg-secondary text-white">
+                                第二專長
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title"><b>資訊工程</b></h5>
+                                <p class="card-text">107年 / 共 27 學分</p>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>一上</b></button>
+                                      <button class="btn btn-primary left btn-limit">計算機程式設計</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>一下</b></button>
+                                      <button class="btn btn-primary left btn-limit">資料結構</button>
+                                      <button class="btn btn-primary left btn-limit">離散數學</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>二上</b></button>
+                                      <button class="btn btn-primary left btn-limit">線性代數</button>
+                                      <button class="btn btn-primary left btn-limit">數位邏輯設計</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>二下</b></button>
+                                      <button class="btn btn-primary left btn-limit">計算機結構</button>
+                                      <button class="btn btn-info left btn-limit">訊號與系統</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>三上</b></button>
+                                      <button class="btn btn-primary left btn-limit">作業系統</button>
+                                      <button class="btn btn-info left btn-limit">積體電路設計概論</button>
+                                      <button class="btn btn-info left btn-limit">計算機網路概論</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>三下</b></button>
+                                      <button class="btn btn-primary left btn-limit">計算方法設計</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>四上</b></button>
+                                      <button class="btn btn-success left btn-limit" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="擋修/計算機結構">嵌入式系統概論</button>
+                                  </li>
+                                  <li class="list-group-item"><button class="btn btn-outline-secondary left btn-limit"><b>四下</b></button>
+
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

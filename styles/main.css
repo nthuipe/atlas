@@ -1,0 +1,117 @@
+#dashboard{
+    background-color: rgba(150, 150, 150, 0.1);
+}
+
+#logo-container, #name-container, #grade-container, #department-container{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+#logo{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5rem;
+}
+
+#exam-container, #exp-container, #map-container, #logout-container{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#exam, #exc, #exp, #map{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#exam:hover, #exc:hover, #exp:hover, #map:hover{
+    /* font-size: 1.1rem; */
+    font-weight: 600;
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
+#name, #grade, #department{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name{
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.info{
+    display: block;
+    font-weight: 600;
+}
+
+#mode-d, #mode-l{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#logout{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+}
+
+#department-main, #department-sub{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    width: 4rem;
+}
+
+#title-home, #title-exam, #title-exp, #title-exc, #title-map{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    min-width: 200px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+}
+
+.card-container, .course-container{
+    margin: 2rem;
+}
+
+.card-add{
+    margin: 0rem !important;
+}
+
+.accordion-container{
+    margin: 2rem;
+}
+
+#help{
+    margin: 2rem;
+}
+
+.left{
+    margin-right: 0.5rem;
+}
+
+.card-limit{
+    max-width: 90%;
+}
+
+.span-expand{
+    font-size: 0.9rem;
+}
+
+.btn-limit{
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
