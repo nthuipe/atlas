@@ -25,7 +25,7 @@ visibility.addEventListener("click", function(){
 
 login.addEventListener("click", function(){
     if(sid.value == "admin" && pwd.value == "admin"){
-        window.location.href = "index.html";
+        window.location.href = "https://nthuipe.github.io/atlas/";
     }else{
         warning.style.display = "initial";
     }
